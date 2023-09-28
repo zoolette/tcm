@@ -492,12 +492,12 @@ tr.tarif-table-row:not(:last-child) {
 @media (max-width:767px) {
     #header-inside-container { margin-left: -15px; margin-right: -15px; }
 
-    #header .navbar .navbar-collapse { border-color: #fff; padding: 5px 0; }
-    #header .navbar .navbar-toggle { display: block; margin-top: 42px; margin-right: 10px; }
-    #header .navbar .navbar-toggle .visible-xs {
+    #header .social .navbar-collapse { border-color: #fff; padding: 5px 0; }
+    #header .social .navbar-toggle { display: block; margin-top: 42px; margin-right: 10px; }
+    #header .social .navbar-toggle .visible-xs {
         float: left; margin-right: 10px; height: 15px; line-height: 15px; text-transform: uppercase; font-size: 12px;
         color: #fff; }
-    #header .navbar .burger { float: right; }
+    #header .social .burger { float: right; }
     #header .navbar-toggle .burger .icon-bar { background: #fff; }
 
     #header #menu-user-mobile { border: 1px solid #fff; list-style: none; position: relative; display: block; padding: 0; margin: 36px 15px 8px 0; float: right; }

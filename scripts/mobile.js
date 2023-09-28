@@ -1,5 +1,5 @@
 const $head = document.querySelector('head');
-const viewPortConfig = '<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">';
+const viewPortConfig = '<meta name="viewport" content="width=device-width, initial-scale=1">';
 if ($head) {
 	$head.insertAdjacentHTML('beforeend', viewPortConfig);
 }

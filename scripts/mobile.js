@@ -1,7 +1,7 @@
 const $head = document.querySelector('head');
-const customStyle = '<link href="https://cdn.jsdelivr.net/gh/zoolette/tcm@latest/style/custom.css" rel="stylesheet" type="text/css" />';
+const viewPortConfig = '<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">';
 if ($head) {
-	$head.insertAdjacentHTML('beforeend', customStyle);
+	$head.insertAdjacentHTML('beforeend', viewPortConfig);
 }
 
 const burgerMenu = '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">' +

@@ -471,7 +471,7 @@ tr.tarif-table-row:not(:last-child) {
 	font-weight: 700;
 }
 
-@media (min-width:768px) {
+@media (min-width:1011px) {
     .menu-container.fixed { z-index: 999; position: fixed; left: 0; top: 0; width: 100%; }
 
     #header-inside-container { display: table; width: 100%; }
@@ -489,7 +489,7 @@ tr.tarif-table-row:not(:last-child) {
     #menu ul li:hover ul { display: block; left: 100%; top: 0; border-top: 0; margin-top: 0; }
 }
 
-@media (max-width:767px) {
+@media (max-width:1010px) {
     #header-inside-container { margin-left: -15px; margin-right: -15px; }
 
     #header .social .navbar-collapse { border-color: #fff; padding: 5px 0; }

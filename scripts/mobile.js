@@ -15,4 +15,8 @@ const burgerMenu = '<button type="button" class="navbar-toggle collapsed" data-t
 const $socialLinks = document.querySelector('ul.social');
 if ($socialLinks) {
 	    $socialLinks.insertAdjacentHTML('afterbegin', burgerMenu );
+1}
+const $navBar = document.querySelector('#header .nav');
+if ($navBar) {
+	$navBar.setAttribute('id', 'bs-navbar-collapse');
 }

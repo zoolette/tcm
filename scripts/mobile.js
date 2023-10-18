@@ -30,12 +30,14 @@ if ($navBar) {
 		let menuIdent = 1;
 		for (const $subMenu of subMenus) {
 			const $link = $subMenu.querySelector('a');
+			const $dropdownMenu = $subMenu.querySelector('ul');
 			if ($link) {
-				$dropdownMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
+				if (dropdownMenu) {
+					$dropdownMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
+				}
 				$dropdownMenu.classList.add('has-submenu');
 				menuIdent++;
 			}
-			const $dropdownMenu = $subMenu.querySelector('ul');
 			if ($dropdownMenu) {
 				$dropdownMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
 				$dropdownMenu.setAttribute('aria-hidden', true);

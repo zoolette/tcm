@@ -479,6 +479,10 @@ tr.tarif-table-row:not(:last-child) {
     #header-inside-container .navbar-collapse { display: table-cell !important; vertical-align: middle; }
     #header-inside-container .navbar-collapse { text-align: right; }
 
+	#header .nav.collapse {
+		display: block;
+	}
+
     #menu { margin: 0; padding: 0; list-style: none; display: inline-block; float: none; }
     #menu > li { padding: 0; position: relative; display: inline-block; float: none; }
     #menu > li > a { position: relative; display: block; text-transform: uppercase; font-size: 14px; text-decoration: none; }

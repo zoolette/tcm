@@ -26,7 +26,7 @@ if ($navBar) {
 	if ($mainMenu) {
 		$mainMenu.classList.add("menu","nav","navbar-nav","sm","sm-vertical","sm-collapsible");
 		$mainMenu.setAttribute('data-smartmenus-id', smartMenuId);
-		const $subMenus = mainMenu.querySelectorAll('li.h-font');
+		const $subMenus = $mainMenu.querySelectorAll('li.h-font');
 		let menuIdent = 1;
 		for (const $subMenu of subMenus) {
 			const $link = $subMenu.querySelector('a');

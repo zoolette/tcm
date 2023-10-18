@@ -504,7 +504,7 @@ tr.tarif-table-row:not(:last-child) {
     #header #menu-user-mobile li a { color: #fff; padding: 6px 8px; display: block; font-size: 18px; }
     #header #menu-user-mobile li a .badge { background: #fff; color: #22427a; padding: 3px 5px; font-size: 8px; margin-left: 3px; }
 
-	#header .nav { position: absolute; right: 0px; padding-bottom: 20px; height: 0; z-index:0; }
+	#header .nav { position: absolute; right: 0px; padding-bottom: 20px; height: 0; z-index:5; }
 	#header .nav #menu { padding-bottom: 20px; }
 	#header .nav #menu li { float: none; }
 

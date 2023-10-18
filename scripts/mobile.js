@@ -26,13 +26,23 @@ if ($navBar) {
 	if ($mainMenu) {
 		$mainMenu.classList.add("menu","nav","navbar-nav","sm","sm-vertical","sm-collapsible");
 		$mainMenu.setAttribute('data-smartmenus-id', smartMenuId);
-		const $subMenus = mainMenu.querySelectorAll('li.h-font ul');
+		const $subMenus = mainMenu.querySelectorAll('li.h-font');
 		let menuIdent = 1;
 		for (const $subMenu of subMenus) {
-			$subMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
-			$subMenu.setAttribute('aria-hidden', true);
-			$subMenu.setAttribute('role', 'group');
-			$subMenu.classList.add('dropdown-menu');
+			const $link = $subMenu.querySelector('a');
+			if ($link) {
+				$dropdownMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
+				$dropdownMenu.classList.add('has-submenu');
+				menuIdent++;
+			}
+			const $dropdownMenu = $subMenu.querySelector('ul');
+			if ($dropdownMenu) {
+				$dropdownMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
+				$dropdownMenu.setAttribute('aria-hidden', true);
+				$dropdownMenu.setAttribute('role', 'group');
+				$dropdownMenu.classList.add('dropdown-menu');
+				menuIdent++;
+			}
 		}
 	}
 }

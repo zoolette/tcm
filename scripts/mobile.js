@@ -34,8 +34,8 @@ if ($navBar) {
 			if ($link) {
 				if ($dropdownMenu) {
 					$dropdownMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
-				}
-				$dropdownMenu.classList.add('has-submenu');
+					$dropdownMenu.classList.add('has-submenu');
+				}				
 				menuIdent++;
 			}
 			if ($dropdownMenu) {

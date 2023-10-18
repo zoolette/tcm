@@ -4,6 +4,8 @@ if ($head) {
 	$head.insertAdjacentHTML('beforeend', viewPortConfig);
 }
 
+const smartMenuId = '46038543588202275';
+
 const burgerMenu = '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">' +
 	                   '<span class="visible-xs h-font">Menu</span>' +
 	                   '<span class="burger">' +
@@ -19,4 +21,18 @@ if ($socialLinks) {
 const $navBar = document.querySelector('#header .nav');
 if ($navBar) {
 	$navBar.setAttribute('id', 'bs-navbar-collapse');
+	$navBar.classList.add('collapse');
+	$mainMenu = $navBar.querySelector('#menu');
+	if ($mainMenu) {
+		$mainMenu.classList.add("menu","nav","navbar-nav","sm","sm-vertical","sm-collapsible");
+		$mainMenu.setAttribute('data-smartmenus-id', smartMenuId);
+		const $subMenus = mainMenu.querySelectorAll('li.h-font ul');
+		let menuIdent = 1;
+		for (const $subMenu of subMenus) {
+			$subMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
+			$subMenu.setAttribute('aria-hidden', true);
+			$subMenu.setAttribute('role', 'group');
+			$subMenu.classList.add('dropdown-menu');
+		}
+	}
 }

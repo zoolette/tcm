@@ -28,11 +28,11 @@ if ($navBar) {
 		$mainMenu.setAttribute('data-smartmenus-id', smartMenuId);
 		const $subMenus = $mainMenu.querySelectorAll('li.h-font');
 		let menuIdent = 1;
-		for (const $subMenu of subMenus) {
+		for (const $subMenu of $subMenus) {
 			const $link = $subMenu.querySelector('a');
 			const $dropdownMenu = $subMenu.querySelector('ul');
 			if ($link) {
-				if (dropdownMenu) {
+				if ($dropdownMenu) {
 					$dropdownMenu.setAttribute('id', `sm-${smartMenuId}-${menuIdent}`);
 				}
 				$dropdownMenu.classList.add('has-submenu');

@@ -45,6 +45,19 @@ if ($navBar) {
 				$dropdownMenu.classList.add('dropdown-menu');
 				menuIdent++;
 			}
+
+			$link.addEventListener('click', handleMenuToggle);
 		}
 	}
+}
+
+function handleMenuToggle(event) {
+	event.preventDefault();
+	const $target = event.currentTarget;
+	const $parent = $target.closest('li');
+	if (!$parent) { return; }
+	const $subMenu = $parent.querySelector('ul[id^="sm-"]');
+	if (!$subMenu) { return; }
+	
+	$subMenu.classList.contains('is-opened') ? $subMenu.classList.remove('is-opened') : $subMenu.classList.add('is-opened');
 }

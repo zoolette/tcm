@@ -516,8 +516,8 @@ tr.tarif-table-row:not(:last-child) {
     #menu li a { color: #fff; }
     #menu > li { height: auto; }
     #menu > li > a { padding: 12px 14px; margin: 0; }
-	#menu li:hover > ul { display: none; }
-	#menu li:hover > ul.is-opened { display: block; }
+	#menu li:hover > ul:not(.is-opened) { display: none; }
+	#menu li:hover > ul.is-opened { display: block !important; float:none !important;}
 
     #menu li a .str-min,
     #menu-user-mobile li a .str-min { display: block; text-transform: uppercase; font-size: 8px; }

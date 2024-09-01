@@ -484,7 +484,7 @@ tr.tarif-table-row:not(:last-child) {
 	}
 
     #menu { margin: 0; padding: 0; list-style: none; display: inline-block; float: none; }
-    #menu > li { padding: 0; position: relative; display: inline-block; float: none; }
+    #menu > li { padding: 0 5px; position: relative; display: inline-block; float: none; }
     #menu > li > a { position: relative; display: block; text-transform: uppercase; font-size: 14px; text-decoration: none; padding: 10px 0; }
 
     #menu ul li a .fas:last-child { float: right; margin: 3px -16px 0 0; }
